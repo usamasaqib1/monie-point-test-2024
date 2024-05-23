@@ -22,22 +22,22 @@ const CustomerService = () => {
     <div className="rounded-2xl p-6 border border-gray-200 !bg-primary-50 w-full relative pb-0 px-0 hover:drop-shadow-xl">
       <div className="flex flex-col items-center w-full min-h-[35rem] h-full relative">
         <div className="flex relative w-full">
-          <div className="wow animate__slideInLeft bg-white left-[4.4rem] absolute rounded-2xl flex flex-col gap-4 items-center drop-shadow-lg p-8 w-64 justify-center h-72">
+          <div className="wow animate__zoomIn bg-white left-[4.4rem] absolute rounded-2xl flex flex-col gap-4 items-center drop-shadow-lg p-8 w-64 justify-center h-72">
             <span>Conversion rate</span>
             <div className="relative bg-tertiary font-medium text-5xl rounded-2xl p-4">
               <div className="absolute -top-4 -left-4 p-2 bg-white rounded-full drop-shadow border-[5px] border-primary-100 text-primary-700">
                 <MdAutoGraph size={12} />
               </div>
-              <CountUp start={0} end={23} suffix="%" enableScrollSpy={true}/>
+              <CountUp start={0} end={23} suffix="%" enableScrollSpy={true} scrollSpyDelay={1000}/>
             </div>
             <span className="text-primary-400">
               Percentage of
               <br /> website visitors
             </span>
           </div>
-          <div className="wow animate__slideInRight absolute left-[17.9rem] top-10 whitespace-nowrap bg-white rounded-2xl flex flex-col gap-4 p-6 drop-shadow-lg justify-end w-64 h-72">
+          <div className="wow animate__zoomIn absolute left-[17.9rem] top-10 whitespace-nowrap bg-white rounded-2xl flex flex-col gap-4 p-6 drop-shadow-lg justify-end w-64 h-72">
             <span className="text-2xl">
-              $ <CountUp start={70} end={132} suffix="K" enableScrollSpy={true} className="text-4xl"/>
+              $ <CountUp start={70} end={132} suffix="K" enableScrollSpy={true} className="text-4xl" scrollSpyDelay={1000}/>
             </span>
 
             <div className="flex gap-0.5">

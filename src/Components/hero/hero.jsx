@@ -21,12 +21,12 @@ const Hero = () => {
           <div className="flex flex-col">
             <div className="flex">
               <span>&emsp;</span>
-              <button className="rounded-full p-4 bg-primary-100 text-secondary p-8 w-fit h-fit wow animate__rotateInDownLeft">
+              <div className="rounded-full p-4 bg-primary-100 text-secondary p-8 w-fit h-fit wow animate__rotateInDownLeft">
                 <AiFillThunderbolt size={36} />
-              </button>
-              <button className="rounded-full p-4 bg-secondary text-white p-7 relative right-6 w-fit h-fit wow animate__zoomIn">
+              </div>
+              <div className="rounded-full p-4 bg-secondary text-white p-7 relative right-6 w-fit h-fit wow animate__zoomIn">
                 <SlGraph size={40} />
-              </button>
+              </div>
               <span className="col-span-2 text-[7.6rem] pr-8">Analytics </span>
             </div>
             <div className="pt-10">
@@ -36,18 +36,18 @@ const Hero = () => {
         </div>
         <div className="relative">
           <div data-wow-delay="1s" className="absolute -top-7 -left-7 wow animate__rollIn">
-            <button className="rounded-full p-4 bg-secondary text-white flex items-center justify-center w-fit h-fit p-5">
+            <div className="rounded-full p-4 bg-secondary text-white flex items-center justify-center w-fit h-fit p-5">
               <FaPlay className="text-white text-base" />
-            </button>
+            </div>
           </div>
           <img className="rounded-3xl w-96 h-72 wow animate__rotateIn" src={LaptopHero} />
         </div>
       </div>
       <span className="flex justify-end w-full text-[7.6rem] gap-5">
         shape
-        <button className="rounded-full p-4 bg-tertiary text-primary w-fit h-fit p-8 wow animate__flipInY">
+        <div className="rounded-full p-4 bg-tertiary text-primary w-fit h-fit p-8 wow animate__flipInY">
           <MdGraphicEq className="text-black h-fit w-fit text-6xl" />
-        </button>
+        </div>
         the future
       </span>
     </div>

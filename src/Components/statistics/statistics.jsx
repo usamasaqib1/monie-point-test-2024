@@ -2,11 +2,9 @@ import { useEffect } from "react";
 import { FaArrowCircleUp } from "react-icons/fa";
 import { GoStack } from "react-icons/go";
 import { TbHexagonLetterI } from "react-icons/tb";
-
-import { TbHexagonPlus2 } from "react-icons/tb";
 import profile1 from "../../assets/profile1.jpg";
 import profile2 from "../../assets/profile2.jpg";
-import chartImage from "../../assets/chart.png";
+import yellowGraph2 from "../../assets/yellow-graph-2.svg";
 import CountUp from "react-countup";
 
 import WOW from "wow.js";
@@ -60,9 +58,9 @@ const Statistics = () => {
                   <span className="text-xl font-semibold">Sales statistic</span>
                   <div className="flex gap-2">
                     <div className="flex gap-2 items-center">
-                      <button className="rounded-full p-4 bg-secondary text-white w-fit h-fit}">
+                      <div className="rounded-full p-4 bg-secondary text-white w-fit h-fit}">
                         <GoStack className="text-white" />
-                      </button>
+                      </div>
                       <div className="flex flex-col">
                         <span className="text-primary-400">Total profit</span>
                         <div className="font-semibold flex text-xl items-end gap-1">
@@ -96,10 +94,10 @@ const Statistics = () => {
                     <div className="flex gap-2">
                       <img
                         className="min-w-0 flex-[2]"
-                        src={chartImage}
+                        src={yellowGraph2}
                         alt=""
                       />
-                      <div className="bg-secondary text-white rounded-2xl p-4 self-end flex-1">
+                      <div className="bg-secondary text-white rounded-2xl p-4 self-end flex-1 mt-10">
                         <div className="flex justify-between items-center">
                           <span>Rate</span>
                           <TbHexagonLetterI className="rotate-90" />
